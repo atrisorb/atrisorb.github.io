@@ -1,0 +1,45 @@
+theme: jekyll-theme-minimal
+title: atrisorb's Portfolio & Projects
+author: atrisorb
+description: > # L'uso di ">" permette di scrivere su più righe.
+  Welcome to my personal page! Here I share updates on my programming projects.
+  Check out my latest project, Erasmus Housing, a platform designed to connect students with verified landlords worldwide. 
+  Feel free to visit the site and use it if you find it useful!
+url: "https://atrisorb.github.io"
+email: adrianosorbello30@gmail.com # Opzionale, per contatti
+
+# ------------------ #
+# SOCIAL & PRO LINKS
+# ------------------ #
+# Ho creato delle variabili personalizzate per i tuoi link.
+# Potrai usarle nel layout del sito per mostrare le icone o i link.
+
+social_links:
+  - name: Erasmus Housing
+    url: https://www.erasmus-housing.com
+  - name: GitHub
+    url: https://github.com/atrisorb
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/adriano-sorbello-89639b2a2
+  - name: TikTok (Erasmus Housing)
+    url: https://www.tiktok.com/@erasmus.housing
+  - name: Telegram (Erasmus Housing)
+    url: https://t.me/ErasmusHousing
+  - name: Gravatar (Erasmus Housing)
+    url: https://gravatar.com/erasmushousingprofile
+
+# ------------------- #
+# CONFIGURAZIONE BUILD
+# ------------------- #
+# Impostazioni tecniche per come Jekyll costruisce il sito.
+
+plugins:
+  - jekyll-seo-tag # Plugin essenziale per ottimizzare la SEO (meta tag, sitemap, etc.)
+  - jekyll-feed    # Genera un feed RSS per i post del blog (utile se ne aggiungerai uno)
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md

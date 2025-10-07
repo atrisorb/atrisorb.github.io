@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<h3>Find me online:</h3>
+
+<ul>
+  {% for link in site.social_links %}
+    <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.name }}</a></li>
+  {% endfor %}
+</ul>

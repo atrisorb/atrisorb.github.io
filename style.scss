@@ -1,0 +1,50 @@
+---
+# Le due righe di trattini sono necessarie per far sì che Jekyll processi questo file.
+---
+
+// Importa lo stile originale del tema "minimal"
+@import "minimal";
+
+// -----------------------------
+// LE TUE PERSONALIZZAZZIONI
+// -----------------------------
+
+// Definisco il tuo colore principale come una variabile per riutilizzarlo facilmente
+$brand-color: #F37F21;
+$brand-color-dark: #d86c13; // Un arancione più scuro per l'hover
+
+// Stile per i link
+a, a:visited {
+  color: $brand-color;
+  transition: color 0.2s ease-in-out; // Transizione fluida per l'hover
+}
+
+a:hover, a:focus {
+  color: $brand-color-dark;
+  text-decoration: underline;
+}
+
+// Stile per il titolo principale nella pagina
+.page-header h1 {
+    color: $brand-color;
+}
+
+// -----------------------------
+// LAYOUT OVERRIDES (NUOVO!)
+// -----------------------------
+
+// Sovrascrive il layout a due colonne del tema
+// forzando gli elementi a impilarsi verticalmente.
+.page-header, .main-content {
+  display: block;
+  width: 100%;
+  text-align: center; // Centra tutto il testo
+}
+
+// Centra la lista dei link social
+.main-content ul {
+  display: inline-block; // Permette alla lista di centrarsi come un blocco unico
+  text-align: left; // Mantiene il testo dei link allineato a sinistra all'interno della lista
+  padding-left: 0; // Rimuove il padding di default che sposta la lista
+  list-style-position: inside; // Mantiene i pallini allineati
+}
